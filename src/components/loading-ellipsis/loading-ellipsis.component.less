@@ -1,0 +1,26 @@
+* {
+	font-size: 7px;
+}
+
+.loading-ellipsis {
+	margin-left: 5px;
+}
+
+.fading-ellipsis(@delay) {
+	animation-duration: 2s;
+	animation-name: fade-in-and-out;
+	animation-iteration-count: infinite;
+	animation-delay: @delay;
+}
+
+.ellipsis-1 {
+	.fading-ellipsis(0s);
+}
+
+.ellipsis-2 {
+	.fading-ellipsis(0.5s);
+}
+
+.ellipsis-3 {
+	.fading-ellipsis(1s);
+}
