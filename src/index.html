@@ -9,6 +9,9 @@
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
 	</head>
 	<body>
+		<div class='background'></div>
+		<div class='bg-temp'></div>
+
 		<navbar></navbar>
 		<app-root></app-root>
 
@@ -33,11 +36,16 @@
 					var img = new Image();
 
 					img.onload = function onImgLoaded() {
-						var body = window.document.querySelector('body');
+						var background = window.document.querySelector('.background');
 
-						body.className += (' bg-full');
-					}
+						background.className += (' bg-full');
 
+						setTimeout(function transitionBackground() {
+							window.document.querySelector('.bg-temp').className += ' remove';
+						}, 2500);
+					};
+
+					img.height = window.innerHeight;
 					img.src = 'assets/images/bg.png';
 
 					if(oldOnLoad && oldOnLoad.call) {

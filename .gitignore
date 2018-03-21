@@ -1,5 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+/webpack.config.js	# This file is based on one of the webpack.*.config.js files for now.
+
 # compiled output
 /dist
 /dist-server
