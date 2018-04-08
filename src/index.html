@@ -9,50 +9,9 @@
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
 	</head>
 	<body>
-		<div class='background'></div>
-		<div class='bg-temp'></div>
+		<div class='background bg-full'></div>
 
 		<navbar></navbar>
 		<app-root></app-root>
-
-		<script type="text/javascript">
-			/**
-			 * The real background image takes a second or two to load.  Instead of displaying a
-			 * white background that flashes to the image (eventually), I am using the "blur-up"
-			 * effect (somewhat) as described by Emil Björklund on
-			 * (CSS-Tricks)[https://css-tricks.com/the-blur-up-technique-for-loading-background-images/].
-			 *
-			 * I am ignoring most of the backwards compatible code (if you're using IE 8 to view
-			 * this, I probably don't want to work for you) as well as super fancy features that
-			 * aren't widely supported yet.
-			 *
-			 * Unfortunately the image still flashes temporarily, but at least the transition is
-			 * better.
-			 */
-			(function loadBackground() {
-				var oldOnLoad = window.onload;
-
-				window.onload = function onWindowLoad() {
-					var img = new Image();
-
-					img.onload = function onImgLoaded() {
-						var background = window.document.querySelector('.background');
-
-						background.className += (' bg-full');
-
-						setTimeout(function transitionBackground() {
-							window.document.querySelector('.bg-temp').className += ' remove';
-						}, 2500);
-					};
-
-					img.height = window.innerHeight;
-					img.src = 'assets/images/bg.png';
-
-					if(oldOnLoad && oldOnLoad.call) {
-						oldOnLoad.call(window);
-					}
-				};
-			})();
-		</script>
 	</body>
 </html>
