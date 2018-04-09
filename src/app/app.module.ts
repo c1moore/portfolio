@@ -5,8 +5,6 @@ import { ComponentsModule } from '../components/components.module';
 import { AppComponent } from './app.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
-import { NavbarComponent } from '../components/navbar/navbar.component';
-
 
 @NgModule({
   declarations: [
@@ -18,6 +16,6 @@ import { NavbarComponent } from '../components/navbar/navbar.component';
     ComponentsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, NavbarComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
