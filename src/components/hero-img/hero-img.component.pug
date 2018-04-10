@@ -1,11 +1,15 @@
-section.hero-header
-  picture
-    source("[media]"='source.mediaQuery' "[sizes]"='source.sizes' "[srcset]"='source.getSourceSet()' "*ngFor"='let source of sources')
-    img.hero-img("[sizes]"='image.sizes' "[srcset]"='image.getSourceSet()' "[src]"='image.src' "[alt]"='image.alt')
-  ng-content(select='.header')
-  ng-content(select='.subheader')
-section.navbar.hero-navbar
-  a.nav-link(href='/') Home
-  a.nav-link(href='/resume') Resume
-  a.nav-link(href='/projects') Projects
-  a.nav-link(href='/contact') Contact
+.no-overflow.vh-100
+  section.hero-header
+    picture
+      source("[media]"='source.mediaQuery' "[sizes]"='source.sizes' "[srcset]"='source.getSourceSet()' "*ngFor"='let source of sources')
+      img.hero-img("[sizes]"='image.sizes' "[srcset]"='image.getSourceSet()' "[src]"='image.src' "[alt]"='image.alt')
+    .hero-overlay
+    ng-content(select='.header')
+    ng-content(select='.subheader')
+  section.navbar.hero-navbar
+    a.nav-link(href='/') Home
+    a.nav-link(href='/resume') Resume
+    a.nav-link.link-icon(href='#about')
+      i.fas.fa-chevron-circle-down
+    a.nav-link(href='/projects') Projects
+    a.nav-link(href='/contact') Contact
