@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LoadingEllipsisComponent } from './loading-ellipsis/loading-ellipsis.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroImgComponent } from './hero-img/hero-img.component';
+import { TextTyperComponent } from './text-typer/text-typer.component';
 
 
 @NgModule({
@@ -13,12 +14,14 @@ import { HeroImgComponent } from './hero-img/hero-img.component';
 	declarations:	[
 		LoadingEllipsisComponent,
 		NavbarComponent,
-		HeroImgComponent
+		HeroImgComponent,
+		TextTyperComponent
 	],
 	exports:			[
 		LoadingEllipsisComponent,
 		NavbarComponent,
-		HeroImgComponent
+		HeroImgComponent,
+		TextTyperComponent
 	]
 })
 export class ComponentsModule { }

@@ -8,6 +8,8 @@ import { PictureSource, PictureImg, ImageRepresentation } from '../model/picture
 	styleUrls:		['./app.component.less']
 })
 export class AppComponent {
+	readonly programAdjectives: ReadonlyArray<string> = ['innovative', 'game-changing', 'flexible', 'maintainable', 'quality'];
+
 	readonly sources = [
 		new PictureSource({
 			mediaQuery: '(max-width: 767px)',

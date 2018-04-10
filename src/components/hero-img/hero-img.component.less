@@ -1,3 +1,5 @@
+@screen-sm-max:	767px;
+
 .hero-img {
 	height: ~"calc(100vh - 75px)";
 	min-width: 100%;
@@ -28,5 +30,11 @@
 		&.link-icon {
 			font-size: 8em;
 		}
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+	.navbar {
+		justify-content: center;
 	}
 }
