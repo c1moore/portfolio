@@ -65,9 +65,16 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
  * APPLICATION IMPORTS
  */
 
+import 'jquery';
+
 import 'bootstrap';
 import '@fortawesome/fontawesome';
 import '@fortawesome/fontawesome-free-solid';
 import '@fortawesome/fontawesome-free-regular';
 import '@fortawesome/fontawesome-free-webfonts';
 import '@fortawesome/fontawesome-free-brands';
+import 'angular2-notifications';
+
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
