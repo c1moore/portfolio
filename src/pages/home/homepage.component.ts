@@ -46,211 +46,191 @@ export class HomePageComponent implements OnInit {
 
   readonly sources = [
     new PictureSource({
-      mediaQuery: '(max-width: 767px)',
-      sizes:       '(max-width: 1513px) 100vw, 1513px',
-      sources:     [
+      mediaQuery: "(max-width: 767px)",
+      sizes:      "(max-width: 1534px) 100vw, 1534px",
+      sources:    [
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_300.jpg',
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_300.jpg',
           width:  300
         }),
         new ImageRepresentation({
-          url:    '29285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_381.jpg',
-          width:  381
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_394.jpg',
+          width:  394
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_445.jpg',
-          width:  445
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_481.jpg',
+          width:  481
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_521.jpg',
-          width:  521
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_553.jpg',
+          width:  553
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_586.jpg',
-          width:   586
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_635.jpg',
+          width:  635
         }),
         new ImageRepresentation({
-          url:     'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_655.jpg',
-          width:  655
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_702.jpg',
+          width:  702
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_719.jpg',
-          width:  719
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_771.jpg',
+          width:  771
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_784.jpg',
-          width:   784
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_842.jpg',
+          width:  842
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_834.jpg',
-          width:  834
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_910.jpg',
+          width:  910
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_890.jpg',
-          width:  890
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_981.jpg',
+          width:  981
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_951.jpg',
-          width:  951
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_1041.jpg',
+          width:  1041
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_997.jpg',
-          width:  997
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_1105.jpg',
+          width:  1105
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_1063.jpg',
-          width:  1063
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_1171.jpg',
+          width:  1171
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_1120.jpg',
-          width:  1120
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_1233.jpg',
+          width:  1233
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_1168.jpg',
-          width:  1168
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_1286.jpg',
+          width:  1286
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_1216.jpg',
-          width:  1216
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_1345.jpg',
+          width:  1345
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_1269.jpg',
-          width:  1269
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_1410.jpg',
+          width:  1410
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_1325.jpg',
-          width:  1325
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_1469.jpg',
+          width:  1469
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_1374.jpg',
-          width:  1374
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_1517.jpg',
+          width:  1517
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_1423.jpg',
-          width:  1423
-        }),
-        new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_1472.jpg',
-          width:  1472
-        }),
-        new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_1_1,c_fill,g_auto__c_scale,w_1513.jpg',
-          width:  1513
+          url:    'assets/images/hero/header_cdrn7y_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg',
+          width:  1534
         })
       ]
     }),
     new PictureSource({
-      mediaQuery:  '(min-width: 768px) and (max-width: 991px)',
-      sizes:      '(max-width: 1983px) 70vw, 1388px',
+      mediaQuery: "(min-width: 768px) and (max-width: 991px)",
+      sizes:      "(max-width: 1983px) 70vw, 1388px",
       sources:    [
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg',
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg',
           width:  538
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_617.jpg',
-          width:  617
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_632.jpg',
+          width:  632
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_694.jpg',
-          width:  694
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_723.jpg',
+          width:  723
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_761.jpg',
-          width:  761
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_797.jpg',
+          width:  797
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_835.jpg',
-          width:  835
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_892.jpg',
+          width:  892
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_905.jpg',
-          width:  905
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_973.jpg',
+          width:  973
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_984.jpg',
-          width:  984
-        }),
-        new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_1045.jpg',
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_1045.jpg',
           width:  1045
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_1120.jpg',
-          width:  1120
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_1118.jpg',
+          width:  1118
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_1179.jpg',
-          width:  1179
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_1195.jpg',
+          width:  1195
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_1243.jpg',
-          width:  1243
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_1277.jpg',
+          width:  1277
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_1311.jpg',
-          width:  1311
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_1354.jpg',
+          width:  1354
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_1366.jpg',
-          width:  1366
-        }),
-        new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_4_3,c_fill,g_auto__c_scale,w_1388.jpg',
+          url:    'assets/images/hero/header_cdrn7y_ar_4_3,c_fill,g_auto__c_scale,w_1388.jpg',
           width:  1388
         })
       ]
     }),
     new PictureSource({
-      mediaQuery:  '(min-width: 992px) and (max-width: 1199px)',
-      sizes:      '(max-width: 2400px) 60vw, 1440px',
+      mediaQuery: "(min-width: 992px) and (max-width: 1199px)",
+      sizes:      "(max-width: 2400px) 60vw, 1440px",
       sources:    [
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_596.jpg',
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_596.jpg',
           width:  596
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_697.jpg',
-          width:  697
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_706.jpg',
+          width:  706
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_790.jpg',
-          width:  790
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_813.jpg',
+          width:  813
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_875.jpg',
-          width:  875
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_909.jpg',
+          width:  909
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_960.jpg',
-          width:  960
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_1000.jpg',
+          width:  1000
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_1041.jpg',
-          width:  1041
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_1085.jpg',
+          width:  1085
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_1119.jpg',
-          width:  1119
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_1183.jpg',
+          width:  1183
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_1211.jpg',
-          width:  1211
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_1276.jpg',
+          width:  1276
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_1293.jpg',
-          width:  1293
-        }),
-        new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_1364.jpg',
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_1364.jpg',
           width:  1364
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_1423.jpg',
-          width:  1423
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_1426.jpg',
+          width:  1426
         }),
         new ImageRepresentation({
-          url:    'assets/images/hero/629285904_mdcc8b_ar_16_9,c_fill,g_auto__c_scale,w_1440.jpg',
+          url:    'assets/images/hero/header_cdrn7y_ar_16_9,c_fill,g_auto__c_scale,w_1440.jpg',
           width:  1440
         })
       ]
@@ -258,91 +238,111 @@ export class HomePageComponent implements OnInit {
   ];
 
   readonly image = new PictureImg({
-    src:      'assets/images/hero/629285904_mdcc8b_c_scale,w_2048.jpg',
-    sizes:    '(max-width: 5120px) 40vw, 2048px',
-    sources:  [
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_480.jpg',
-        width:  480
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_593.jpg',
-        width:  593
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_697.jpg',
-        width:  697
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_794.jpg',
-        width:  794
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_883.jpg',
-        width:  883
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_963.jpg',
-        width:  963
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1063.jpg',
-        width:  1063
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1142.jpg',
-        width:  1142
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1221.jpg',
-        width:  1221
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1303.jpg',
-        width:  1303
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1389.jpg',
-        width:  1389
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1463.jpg',
-        width:  1463
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1530.jpg',
-        width:  1530
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1608.jpg',
-        width:  1608
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1685.jpg',
-        width:  1685
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1760.jpg',
-        width:  1760
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1829.jpg',
-        width:  1829
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1905.jpg',
-        width:  1905
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_1991.jpg',
-        width:  1991
-      }),
-      new ImageRepresentation({
-        url:    'assets/images/hero/629285904_mdcc8b_c_scale,w_2048.jpg',
-        width:  2048
-      })
-    ]
-  });
+      src:      'assets/images/hero/header_cdrn7y_c_scale,w_3600.jpg',
+      sizes:    '(max-width: 9000px) 40vw, 3600px',
+      sources:  [
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_480.jpg',
+          width:  480
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_695.jpg',
+          width:  695
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_886.jpg',
+          width:  886
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_1063.jpg',
+          width:  1063
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_1209.jpg',
+          width:  1209
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_1366.jpg',
+          width:  1366
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_1523.jpg',
+          width:  1523
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_1670.jpg',
+          width:  1670
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_1807.jpg',
+          width:  1807
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_1949.jpg',
+          width:  1949
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_2074.jpg',
+          width:  2074
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_2199.jpg',
+          width:  2199
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_2331.jpg',
+          width:  2331
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_2452.jpg',
+          width:  2452
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_2579.jpg',
+          width:  2579
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_2698.jpg',
+          width:  2698
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_2808.jpg',
+          width:  2808
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_2913.jpg',
+          width:  2913
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_3030.jpg',
+          width:  3030
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_3151.jpg',
+          width:  3151
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_3253.jpg',
+          width:  3253
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_3337.jpg',
+          width:  3337
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_3453.jpg',
+          width:  3453
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_3550.jpg',
+          width:  3550
+        }),
+        new ImageRepresentation({
+          url:    'assets/images/hero/header_cdrn7y_c_scale,w_3600.jpg',
+          width:  3600
+        })
+      ]
+    });
 
   ngOnInit(): void {
     this.highlightedSkills = _.shuffle(this.skills).splice(0, 5);
