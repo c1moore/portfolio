@@ -1,12 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('../node_modules/bootstrap/dist/css/bootstrap.css');
+@import './custom';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+/* Color Scheme: http://paletton.com/#uid=33W0u0k++HXuSZKRt+V+Wtl+amZ */
 
 /* General Element Styles */
 * {
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif !important;
+}
+
+p {
+	line-height: 1.5;
+	font-size: 1.15em;
+}
+
+blockquote {
+	line-height: 1.5;
+	font-size: 1.05em;
+}
+
+label {
+	font-weight: bold;
+	font-size: 1.15em;
+	line-height: 1.5;
+}
+
+.navbar {
+	background-color: #333232;
+	flex-wrap: nowrap;
+	width: 100%;
+	z-index: 500;
+	color: white;
+}
+
+.bg-alternative {
+	background-color: #ebebeb;
+}
+
+.navbar-buffer {
+  padding-top: 85px;
+}
+
+.form-feedback {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
+.attributions {
+	font-size: xx-small;
 }
 
 /* Helper Classes */
+.center {
+	text-align: center;
+}
+
 .margin-top-5 {
 	margin-top: 5px;
 }
@@ -147,6 +197,10 @@
 
 .margin-left-50 {
 	margin-left: 50px;
+}
+
+.padding-30 {
+	padding: 30px;
 }
 
 .no-overflow {

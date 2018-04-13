@@ -10,7 +10,7 @@ const postcssUrl = require('postcss-url');
 const cssnano = require('cssnano');
 const postcssImports = require('postcss-import');
 
-const { NoEmitOnErrorsPlugin, SourceMapDevToolPlugin, NamedModulesPlugin } = require('webpack');
+const { NoEmitOnErrorsPlugin, SourceMapDevToolPlugin, NamedModulesPlugin, ProvidePlugin } = require('webpack');
 const { NamedLazyChunksWebpackPlugin, BaseHrefWebpackPlugin } = require('@angular/cli/plugins/webpack');
 const { CommonsChunkPlugin } = require('webpack').optimize;
 const { AngularCompilerPlugin } = require('@ngtools/webpack');
@@ -142,7 +142,7 @@ module.exports = {
       "./src/polyfills.ts"
     ],
     "styles": [
-      "./src/styles.css"
+      "./src/styles.scss"
     ]
   },
   "output": {
@@ -187,7 +187,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles.scss")
         ],
         "test": /\.css$/,
         "use": [
@@ -211,7 +211,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles.scss")
         ],
         "test": /\.scss$|\.sass$/,
         "use": [
@@ -243,7 +243,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles.scss")
         ],
         "test": /\.less$/,
         "use": [
@@ -273,7 +273,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles.scss")
         ],
         "test": /\.styl$/,
         "use": [
@@ -304,7 +304,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles.scss")
         ],
         "test": /\.css$/,
         "use": [
@@ -328,7 +328,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles.scss")
         ],
         "test": /\.scss$|\.sass$/,
         "use": [
@@ -353,14 +353,14 @@ module.exports = {
             "options": {
               "sourceMap": false,
               "precision": 8,
-              "includePaths": []
+              "includePaths": [path.join(process.cwd(), 'node_modules'), path.join(process.cwd(), 'node_modules/bootstrap/scss'), path.join(process.cwd(), 'src')]
             }
           }
         ]
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles.scss")
         ],
         "test": /\.less$/,
         "use": [
@@ -390,7 +390,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles.scss")
         ],
         "test": /\.styl$/,
         "use": [
@@ -426,6 +426,14 @@ module.exports = {
     ]
   },
   "plugins": [
+    new ProvidePlugin({
+      IScroll: "fullpage.js/vendors/scrolloverflow.min",
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery',
+      'window.jQuery': 'jquery',
+      'window.$': 'jquery'
+    }),
     new NoEmitOnErrorsPlugin(),
     new CopyWebpackPlugin([
       {
