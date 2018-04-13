@@ -1,0 +1,68 @@
+.header {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 25vw;
+  color: white;
+  font-weight: bolder;
+  transform: translateY(-50%);
+
+  .hero-header {
+    font-size: 4.5em;
+  }
+}
+
+.btn-icon {
+  height: 75px;
+  width: 75px;
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-logo(@url) {
+  background-image: url(@url);
+}
+
+.btn-github {
+  .btn-logo('../../assets/images/social-media/GitHub.png');
+}
+
+.btn-linkedin {
+  .btn-logo('../../assets/images/social-media/LinkedIn.png');
+}
+
+.btn-stackoverflow {
+  .btn-logo('../../assets/images/social-media/StackOverflow.png');
+}
+
+.fab.fa-linkedin {
+  color: rgb(0, 119, 181);
+}
+
+.profile-pic-container {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.profile-pic {
+  height: 160px;
+  border-radius: 80px;
+}
+
+.question {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.answer {
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+  color: #333232;
+}

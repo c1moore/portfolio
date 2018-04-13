@@ -1,0 +1,75 @@
+navbar(hiddenUntil='100vh')
+
+full-page
+  .section.no-overflow(fp-section "[defaultActive]"='true')
+    hero-img("[sources]"='sources' "[image]"='image')
+      .header
+        h1.hero-header.margin-left-20
+          span Ready to translate your ideas into&nbsp;
+          text-typer("[values]"='programAdjectives')
+          br
+          span programs?
+  #content.section.container.navbar-buffer(fp-section "[overflow]"='true')
+    .row
+      .col-sm-3.col-12.profile-pic-container.order-12.order-sm-first
+        img.profile-pic(src='/assets/images/profile.jpg')
+
+      .col-sm-9.col-12
+        h3.about-header.margin-bottom-10 About Me
+
+        p.intro Hi.  I am Calvin Moore, more commonly known around the web as c1moore.  I am a computer scientist on a mission.  My mission you ask?  I want to help you find eloquent solutions to your software engineering challenges.  What exactly does that mean?  Well, it means that I don't just mindlessly throw code together to fix a problem.  It means that I have a passion for solving challenges.  It means I am willing to participate in all stages of the development life-cycle to find the right solution to your challenge: from design to development and beyond.  It also means that I am willing (and able) to listen and learn.
+
+    .row.bg-alternative.margin-top-20.justify-content-center.padding-30
+      .col-12.center.margin-bottom-20
+        h5 Connect with Me
+
+      .col-3.center
+        a.btn.btn-light.btn-icon.btn-github(href='https://github.com/c1moore' target='_blank' role='button')
+
+      .col-3.center
+        a.btn.btn-light.btn-icon.btn-linkedin(href='https://linkedin.com/in/c1moore' target='_blank' role='button')
+
+      .col-3.center
+        a.btn.btn-light.btn-icon.btn-stackoverflow(href='https://stackoverflow.com/users/3263719' target='_blank' role='button')
+
+    .row.highlighted-skills.margin-top-50
+      h3.col-12 Highlighted Skills
+
+      .row.justify-content-md-center.w-100
+        skill.col-4.col-sm-3.col-md-2("*ngFor"='let skill of highlightedSkills' "[skill]"='skill')
+
+    .row.margin-top-50
+      h3.col-12 Programming Languages
+
+      programming-language.row.col-12.col-sm-6.col-md-3.margin-bottom-20("*ngFor"='let language of programmingLanguages' "[language]"='language')
+
+    .row.margin-top-50
+      .col-12
+        h3.faq.margin-bottom-20 Answers to Questions You Didn't Know You Had
+
+        h5.question What are you looking for in a job?
+        blockquote.alert.alert-secondary.answer I am looking for a job where I can make a difference, not only for those that will use my products, but also within the company and for my fellow coworkers.  Culture and team dynamics are very important to me when considering where I will work.  Second to that is my ability to grow both professionally and personally.  I do not want to feel as if I am becoming obsolete or not being challenged anymore.
+
+        h5.question What is your philosophy on leadership?
+        blockquote.alert.alert-secondary.answer I am a leader by nature, but not because I want power, but rather because I want to empower those around me.  Never does a single man know all the answers and unfortunately it is all too common for members of a team to be ignored or put down.  I believe a leader is only as good as his/her team and that it is a leader's job to organize a team and facilitate their needs so they can do what they do best.
+
+        h5.question Are you interested in contract work?
+        blockquote.alert.alert-secondary.answer I am not a contractor nor am I interested in contract work at this time.  Good luck in your endeavors.
+
+        h5.question How long have you been programming?
+        blockquote.alert.alert-secondary.answer I started programming when I was about 10.  My projects were pretty simple and I don't remember much about them, but the experience stuck with me through the rest of my education as I continued programming in middle school then high school.
+
+        h5.question What is the most memorable program you ever wrote?
+        blockquote.alert.alert-secondary.answer I have written quite a few impressive projects.  From recruiter systems to education platforms and even simple Unix shells, but the most memorable program I ever wrote was one of my first programs.  My freshman year of high school I learned how to write batch programs using MS-DOS.  Not impressive on its own, but by the end of the year I had actually written a "graphical" game using MS-DOS.  It wasn't anything special and the graphics sucked, but the mere fact that it worked and I could play it changed my life.  That project sparked an ember that grew into my passion today for software engineering.
+
+    credit.margin-top-50
+
+footer.margin-top-30.attributions
+  div
+    span Some icons made by&nbsp;
+    a(href="http://www.freepik.com" title="Freepik") Freepik
+    span &nbsp;from&nbsp;
+    a(href="https://www.flaticon.com/" title="Flaticon") www.flaticon.com
+    span &nbsp;and are licensed by&nbsp;
+    a(href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank") CC 3.0 BY
+    span .
