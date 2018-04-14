@@ -1,0 +1,8 @@
+.flex-box
+	.col-4
+		img.language-img("[src]"='language.icon' "[alt]"='language.name.toLowerCase()')
+	.col-8
+		span.language-name {{language.name}}
+		br
+		.progress
+			.progress-bar(role='progressbar' "[attr.aria-valuenow]"='language.confidence' aria-valuemin='0' aria-valuemax='1' "[style.width]"='(language.confidence * 100) + "%"')

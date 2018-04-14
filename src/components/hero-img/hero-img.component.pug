@@ -1,0 +1,15 @@
+.no-overflow.vh-100
+  section.hero-header.no-overflow
+    picture
+      source("[media]"='source.mediaQuery' "[sizes]"='source.sizes' "[srcset]"='source.getSourceSet()' "*ngFor"='let source of sources')
+      img.hero-img("[sizes]"='image.sizes' "[srcset]"='image.getSourceSet()' "[src]"='image.src' "[alt]"='image.alt')
+    .hero-overlay
+    ng-content(select='.header')
+    ng-content(select='.subheader')
+  section.navbar.hero-navbar
+    a.nav-link.d-none.d-md-block("routerLink"='/') Home
+    a.nav-link.d-none.d-md-block(href='/resume' target='_blank') Resume
+    a.nav-link.link-icon("(click)"='goToContent()')
+      i.fas.fa-chevron-circle-down
+    a.nav-link.d-none.d-md-block(href='https://github.com/c1moore' target='_blank') Projects
+    a.nav-link.d-none.d-md-block(routerLink='/contact') Contact

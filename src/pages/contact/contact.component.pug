@@ -1,0 +1,39 @@
+navbar
+
+.container.navbar-buffer
+  form.form("(ngSubmit)"='onSubmit()' "#contactForm"='ngForm')
+    .form-row.margin-top-30
+      .col-12
+        label(for='name') Name
+        input#name.form-control(name='name' type='text' "[(ngModel)]"='user.name' placeholder='First Last' required)
+
+        span.form-feedback("*ngIf"='errors.name.invalid') {{errors.name.message}}
+
+    .form-row.margin-top-30
+      .col-12
+        label(for='email') Email Address
+        input#email.form-control(name='email' type='email' "[(ngModel)]"='user.email' required)
+
+        span.form-feedback("*ngIf"='errors.email.invalid') {{errors.email.message}}
+
+    .form-row.margin-top-30
+      .col-12
+        label(for='subject') Subject
+        input#subject.form-control(name='subject' type='text' "[(ngModel)]"='message.subject' required)
+
+        span.form-feedback("*ngIf"='errors.subject.invalid') {{errors.subject.message}}
+
+    .form-row.margin-top-30
+      .col-12
+        label(for='message') Your Message
+        textarea#message.form-control(name='message' "[(ngModel)]"='message.content' rows='7' required)
+
+        span.form-feedback("*ngIf"='errors.message.invalid') {{errors.message.message}}
+
+    .form-row.margin-top-30
+      .col-12
+        re-captcha("(resolved)"='$event && onCaptchaResponse($event)' siteKey='6Lcl8FIUAAAAAG_YBqQ3yQ-oMZarDJQ7a3lnfDFy' size='invisible' "#captcha"='reCaptcha')
+
+        span.form-feedback("*ngIf"='errors.captcha.invalid') {{errors.captcha.message}}
+
+    button.btn.btn-primary.btn-lg.margin-top-30("(click)"='captcha.execute()' "[disabled]"='!contactForm.form.valid') Send

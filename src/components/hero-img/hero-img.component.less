@@ -1,0 +1,41 @@
+@screen-sm-max:	767px;
+
+.hero-img {
+	height: ~"calc(100vh - 75px)";
+	min-width: 100%;
+}
+
+.hero-header {
+	overflow-x: hidden;
+	position: relative;
+}
+
+.hero-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 255, 0.45);
+}
+
+.navbar.hero-navbar {
+	height: 75px;
+
+	.nav-link {
+		color: white;
+		font-size: 1.25em;
+		font-weight: bolder;
+
+		&.link-icon {
+			font-size: 8em;
+			cursor: pointer;
+		}
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+	.navbar {
+		justify-content: center;
+	}
+}
