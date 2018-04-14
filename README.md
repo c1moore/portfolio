@@ -6,8 +6,8 @@ This is the source code for my personal portfolio available at [c1moore.codes](h
 
 Awesome!  Just fork the project, remove my personal data, and begin personalizing it.  I only ask that you do the following:
 
-	- Credit me on your site by linking to either my website ([c1moore.codes](https://c1moore.codes)) or to this GitHub page.  There is already a component (in `src/components/credit`) that takes care of this requirement, just make sure to display this somewhere on your website.
-	- Let me know you used it!  It's always exciting to hear that somebody else found my work useful.  You can do that by using my contact info available here, on [LinkedIn](https://linkedin.com/in/c1moore), or with my [contact form](https://c1moore.codes/contact).
+ - Credit me on your site by linking to either my website ([c1moore.codes](https://c1moore.codes)) or to this GitHub page.  There is already a component (in `src/components/credit`) that takes care of this requirement, just make sure to display this somewhere on your website.
+ - Let me know you used it!  It's always exciting to hear that somebody else found my work useful.  You can do that by using my contact info available here, on [LinkedIn](https://linkedin.com/in/c1moore), or with my [contact form](https://c1moore.codes/contact).
 
 ## Roadmap
 
