@@ -36,7 +36,7 @@ full-page
       h3.col-12 Highlighted Skills
 
       .row.justify-content-md-center.w-100
-        skill.col-4.col-sm-3.col-md-2("*ngFor"='let skill of highlightedSkills' "[skill]"='skill')
+        skill.col-4.col-sm-3.col-md-2("*ngFor"='let skill of highlightedSkills; let index = index;' "[skill]"='skill' "[ngClass]"='{"d-none": index >= 3, "d-sm-block": index >= 3}')
 
     .row.margin-top-50
       h3.col-12 Programming Languages
@@ -57,7 +57,7 @@ full-page
         blockquote.alert.alert-secondary.answer I am not a contractor nor am I interested in contract work at this time.  Good luck in your endeavors.
 
         h5.question How long have you been programming?
-        blockquote.alert.alert-secondary.answer I started programming when I was about 10.  My projects were pretty simple and I don't remember much about them, but the experience stuck with me through the rest of my education as I continued programming in middle school then high school.
+        blockquote.alert.alert-secondary.answer I started programming when I was about 10.  My projects were pretty simple and I don't remember much about them, but the experience stuck with me through the rest of my education as I continued programming in middle school then high school. When it came time to choose my major for college, the choice was a no-brainer. My advisor suggested choosing a back-up major, but I knew there was no need.
 
         h5.question What is the most memorable program you ever wrote?
         blockquote.alert.alert-secondary.answer I have written quite a few impressive projects.  From recruiter systems to education platforms and even simple Unix shells, but the most memorable program I ever wrote was one of my first programs.  My freshman year of high school I learned how to write batch programs using MS-DOS.  Not impressive on its own, but by the end of the year I had actually written a "graphical" game using MS-DOS.  It wasn't anything special and the graphics sucked, but the mere fact that it worked and I could play it changed my life.  That project sparked an ember that grew into my passion today for software engineering.

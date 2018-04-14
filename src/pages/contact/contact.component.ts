@@ -141,10 +141,12 @@ export class ContactComponent {
     }).subscribe(
       () => {},
       (error: HttpErrorResponse) => {
-        this.toastr.error('There was an error sending your message.', error.message);
+        this.toastr.error('There was an error sending your message.', error.error);
+        this.captcha.reset();
       },
       () => {
         this.toastr.success('Message sent.');
+        this.captcha.reset();
       }
     );
   }
